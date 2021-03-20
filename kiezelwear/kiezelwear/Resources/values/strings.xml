@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Kiezel Stats</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+  <string name="nbpurchases">Number of Purchases</string>
+  <string name="amount">Amount</string>
+  <string name="rank">Rank</string>
+  <string name="lastupdate">Last update at:</string>
+  <string name="at">at</string>
+</resources>

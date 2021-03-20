@@ -1,0 +1,8 @@
+<resources>
+    <string name="hello_world">Hello Round World!</string>
+  <string name="nbpurchases">Number of Purchases</string>
+  <string name="amount">Amount</string>
+  <string name="rank">Rank</string>
+  <string name="lastupdate">Last update at:</string>
+  <string name="at">at</string>
+</resources>

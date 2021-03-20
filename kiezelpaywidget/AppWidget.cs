@@ -7,6 +7,7 @@ using Android.Appwidget;
 using Android.Content;
 
 using Android.Widget;
+using datakiezel;
 using Newtonsoft.Json;
 namespace kiezelpaywidget
 {

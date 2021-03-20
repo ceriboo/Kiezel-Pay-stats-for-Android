@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:deviceIds="wear">
+   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:gravity="center"
+    
+	>
+	<TextView
+		android:id="@+id/nbpurchase"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="35dp"
+		android:text="@string/nbpurchases"
+		android:gravity="center"
+		android:textSize="15sp"
+			
+	 />
+	<TextView
+		android:id="@+id/valpurchase"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/nbpurchase"
+		android:textSize="20sp"
+		android:gravity="center"
+		android:text="---"
+		 />
+	<TextView
+		android:id="@+id/totalamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:gravity="center"
+		android:layout_below="@id/valpurchase"
+		android:textSize="15sp"
+        android:text="@string/amount" />
+	<TextView
+		android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+		android:layout_below="@id/totalamount"
+		android:textSize="20sp" 
+        android:text="---" />
+	<TextView
+		android:id="@+id/totalrank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:gravity="center"
+		android:layout_below="@id/amount"
+		android:textSize="15sp"
+        android:text="@string/rank"
+		/>
+	<TextView
+		android:id="@+id/rank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+		android:layout_below="@id/totalrank"
+		android:textSize="20sp" 
+        android:text="---"
+		/>
+</RelativeLayout>
+</android.support.wear.widget.BoxInsetLayout>
