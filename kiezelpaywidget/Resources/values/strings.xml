@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">Kiezel Stats</string>
+  <string name="action_settings">Settings</string>
+  <string name="nbpurchases">Number of Purchases</string>
+  <string name="amount">Amount</string>
+  <string name="rank">Rank</string>
+  <string name="lastupdate">Last update at:</string>
+  <string name="at">at</string>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:gravity="center"
+	android:background="@color/colorkiezel"
+	>
+	<TextView
+		android:id="@+id/nbpurchase"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="20dp"
+		android:text="@string/nbpurchases"
+		android:gravity="center"
+		android:textSize="25sp"
+		android:textColor="@color/white"
+	 />
+	<TextView
+		android:id="@+id/valpurchase"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/nbpurchase"
+		android:textSize="30sp"
+		android:gravity="center"
+		android:text="---"
+		android:textColor="@color/white"
+		 />
+	<TextView
+		android:id="@+id/totalamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:gravity="center"
+		android:layout_below="@id/valpurchase"
+		android:textSize="25sp"
+        android:text="@string/amount"
+		android:textColor="@color/white"/>
+	<TextView
+		android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+		android:layout_below="@id/totalamount"
+		android:textSize="30sp" 
+        android:text="---$"
+		android:textColor="@color/white"/>
+
+	<TextView
+		android:id="@+id/totalrank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:gravity="center"
+		android:layout_below="@id/amount"
+		android:textSize="25sp"
+        android:text="@string/rank"
+		android:textColor="@color/white"/>
+	<TextView
+		android:id="@+id/rank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+		android:layout_below="@id/totalrank"
+		android:textSize="30sp" 
+        android:text="---"
+		android:textColor="@color/white"/>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   
+   android:orientation="horizontal"
+  android:layout_gravity="end"
+		android:gravity="end"
+		android:layout_below="@id/rank"
+		>
+		<TextView
+		android:id="@+id/lastupddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+		
+		android:layout_gravity="end"
+		android:gravity="end"
+		android:textSize="20sp" 
+        android:text="@string/lastupdate"
+		android:textColor="@color/white"/>
+   <TextView
+		android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+		
+		android:layout_gravity="end"
+		android:gravity="end"
+		android:textSize="20sp" 
+        android:text="--:--"
+		android:textColor="@color/white"/>
+ </LinearLayout>
+	
+</RelativeLayout>
