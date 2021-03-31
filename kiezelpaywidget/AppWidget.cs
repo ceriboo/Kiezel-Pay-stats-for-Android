@@ -74,10 +74,22 @@ public class AppWidget : AppWidgetProvider
     {
             //widgetView = new RemoteViews(context.PackageName, Resource.Layout.widget);
 
-          // maj();
-           
-                return widgetView;
+            // maj();
+            RegisterClicks(context, appWidgetIds, widgetView);
+            return widgetView;
             
     }
-}
+
+
+        private void RegisterClicks(Context context, int[] appWidgetIds, RemoteViews widgetView)
+        {
+            var intent = new Intent(context, typeof(AppWidget));
+            intent.SetAction(AppWidgetManager.ActionAppwidgetUpdate);
+            intent.PutExtra(AppWidgetManager.ExtraAppwidgetIds, appWidgetIds);
+
+            // Register click event for the Background
+            var piBackground = PendingIntent.GetBroadcast(context, 0, intent, PendingIntentFlags.UpdateCurrent);
+            widgetView.SetOnClickPendingIntent(Resource.Id.widgetBackground, piBackground);
+        }
+    }
 }

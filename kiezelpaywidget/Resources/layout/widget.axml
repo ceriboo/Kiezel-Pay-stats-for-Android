@@ -1,8 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:gravity="center"
+	android:background="@color/colorkiezel"
+	android:orientation="horizontal"
+	android:id="@+id/widgetBackground">
+>
+	
+	
+<!--RelativeLayout
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:gravity="center"
+	android:orientation="vertical"
+	android:background="@color/colorkiezel">
+		<Button android:id="@+id/overallbutton"
+			android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="overall"/>	 
+	<Button android:id="@+id/fitbitbutton"
+			android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FITBIT"
+		android:layout_below="@id/overallbutton"/>	 
+			<Button
+			android:id="@+id/garminbutton"
+			android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GARMIN"
+		android:layout_below="@id/fitbitbutton"
+		/>
+		<Button android:id="@+id/pebblebutton"
+			android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PEBBLE"
+		android:layout_below="@id/garminbutton"
+		/>	
+</RelativeLayout-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
 	android:gravity="center"
 	android:background="@color/colorkiezel"
@@ -45,7 +87,6 @@
 		android:textSize="30sp" 
         android:text="---$"
 		android:textColor="@color/white"/>
-
 	<TextView
 		android:id="@+id/totalrank"
         android:layout_width="match_parent"
@@ -69,8 +110,8 @@
    android:layout_height="wrap_content"
    
    android:orientation="horizontal"
-  android:layout_gravity="end"
-		android:gravity="end"
+  android:layout_gravity="center"
+		android:gravity="center"
 		android:layout_below="@id/rank"
 		>
 		<TextView
@@ -98,3 +139,5 @@
  </LinearLayout>
 	
 </RelativeLayout>
+
+</LinearLayout>

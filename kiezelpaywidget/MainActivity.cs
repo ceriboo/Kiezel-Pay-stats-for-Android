@@ -27,7 +27,7 @@ namespace kiezelpaywidget
 
            // FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
           //  fab.Click += FabOnClick;
-            maj();
+            maj("");
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
@@ -54,9 +54,15 @@ namespace kiezelpaywidget
                 .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
         }
 
-        async void maj()
+        async void maj(string platform)
         {
-            int utc = Math.Abs((DateTimeKind.Local-DateTimeKind.Utc)*60);
+            int utc = Math.Abs((DateTimeKind.Local - DateTimeKind.Utc) * 60);
+            string _url = String.Format(url, utc.ToString()) + Apikey;
+            if (platform !="")
+            {
+                _url +=  "&platform=fitbit";
+            }
+          
             HttpClient client = new HttpClient();
             client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36");
 
@@ -64,7 +70,7 @@ namespace kiezelpaywidget
             HttpResponseMessage laresponse = new HttpResponseMessage();
             //laresponse.Version = new Version("1.1");
             //laresponse.RequestMessage.Version = new Version("1.1");
-            laresponse = await client.GetAsync(String.Format(url,utc.ToString()) + Apikey);
+            laresponse = await client.GetAsync(_url);
             
             
             if (laresponse.IsSuccessStatusCode)
